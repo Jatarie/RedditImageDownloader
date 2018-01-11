@@ -126,7 +126,7 @@ def fetchlinks(reddit, sub_list, subcategory, supercategory, post_number):
 
 
 def dictionaryinit():
-    with open("pornlist", "r") as f:
+    with open("sublist", "r") as f:
         x = str(f.readlines())
     categories = re.findall(r'(?<=@@\\n\', \')[\w\s]+(?=\\n)', x)
     d1 = {}
